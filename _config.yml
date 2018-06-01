@@ -1,0 +1,34 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      true
+gems:             [jekyll-paginate, jekyll-seo-tag]
+
+# Permalinks
+permalink:        none
+
+# Setup
+title:            Josh Cranna
+tagline:          'Portfolio page of Josh Cranna'
+url:              http://joshcranna.com
+excerpt_separator: "<!--more-->"
+baseurl:          /
+highlighter:      rouge
+author:
+  name:           Josh Cranna
+  url:            https://joshcranna.com
+  email:          joshuacranna@gmail.com
+  twitter:        CrannaJosh
+
+# Custom vars
+github:
+  repo:           https://github.com/JoshCranna/joshcranna.github.io
+blog_masthead_pages:       
+  Entries:        '/entries'
+  Feed:           '/atom.xml'
+  About:          '/about'
+  Projects:       '/projects'
+  Resume:         '/resume'
+personal_external_links:
+  linkedin:        'https://www.linkedin.com/in/joshcranna'
+  twitter:         'https://twitter.com/CrannaJosh'
+  github:          'https://github.com/JoshCranna'

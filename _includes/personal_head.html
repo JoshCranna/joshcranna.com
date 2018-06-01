@@ -1,0 +1,60 @@
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- Google webmasters site verification -->
+  <meta name="google-site-verification" content="j1kkpVPmypzqh-xVKVmszptrQdE1JPa_aHMhsfsQNHQ" />
+
+  <!-- Site description -->
+  <meta name="description" content="Portfolio of Josh Cranna, software + web developer">
+
+  <!-- Open Graph image -->
+  <!-- TODO -->
+
+  <title>
+    {% if page.title == "Home" %}
+      Josh Cranna &middot; Software + Web Developer
+    {% else %}
+      {{ page.title }} &middot; Josh Cranna
+    {% endif %}
+  </title>
+
+  <!-- Foundation -->
+  <link rel="stylesheet" href="{{ site.baseurl }}public/foundation/css/normalize.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}public/foundation/css/foundation.min.css">
+  <script src="{{ site.baseurl }}public/foundation/js/vendor/modernizr.js"></script>
+  <script src="{{ site.baseurl }}public/foundation/js/vendor/fastclick.js"></script>
+  <script src="{{ site.baseurl }}public/foundation/js/vendor/jquery.js"></script>
+  <script src="{{ site.baseurl }}public/foundation/js/foundation.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/personal.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css">
+
+  <!-- JS -->
+  <script src="{{ site.baseurl }}public/js/scripts.js"></script>
+
+  <!-- Third-party CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}public/font-awesome/css/font-awesome.min.css">
+
+  <!-- Third-party JS -->
+  <script src="{{ site.baseurl }}public/typed-js/typed.min.js"></script>
+  <script src="{{ site.baseurl }}public/scrollTo/jquery.scrollTo.min.js"></script>
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.baseurl }}public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}atom.xml">
+
+  <!-- Google Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Poppins:400,600' rel='stylesheet' type='text/css'>
+
+  <!-- Google Analytics -->
+  {% include analytics.html %}
+</head>

@@ -1,0 +1,96 @@
+---
+layout: personal
+title: Home
+---
+
+<section class="site-intro">
+  <div class="site-intro-content home-page-section-content">
+    <h1 class="intro-greeting">Hi, I'm Josh.</h1>
+    <hr>
+    <div> <!-- Anonymous div helps remove this entire block -->
+      <span class="intro-text intro-text-1"></span><br/><br class="hide-for-medium-up"/>
+      <span class="intro-text intro-text-2"></span><br/><br class="hide-for-medium-up"/>
+      <span class="intro-text intro-text-3"></span><br/><br class="hide-for-medium-up"/>
+    </div>
+    <span class="intro-text intro-text-1-skipped"></span><br/><br class="hide-for-medium-up"/>
+    <span class="intro-text intro-text-2-skipped"></span><br/><br class="hide-for-medium-up"/>
+    <span class="intro-text intro-text-3-skipped"></span><br/><br class="hide-for-medium-up"/>
+    <div class="scroll-prompter-row show-for-large-up">
+      <span class="scroll-prompter"><a><i class="fa fa-chevron-circle-down"></i></a></span>
+    </div>
+  </div>
+</section>
+
+<section class="skill-logos">
+  <div class="home-page-section-content">
+    <h1>Skills</h1>
+    <hr>
+    <div class="row skill-logo-row">
+      <a href="https://www.python.org"><img class="skill-logo-img logo-img" src="{{ site.url }}/assets/personal-site-assets/python-logo.png"/></a>
+      <a href="http://www.java.com"><img class="skill-logo-img logo-img" src="{{ site.url }}/assets/personal-site-assets/java-logo.png"/></a>
+      <span aria-haspopup="true" data-tooltip class="has-tip" title="JavaScript"><img class="skill-logo-img logo-img" src="{{ site.url }}/assets/personal-site-assets/javascript-logo.png"/></span>
+      <a href="https://nodejs.org"><img class="skill-logo-img logo-img" src="{{ site.url }}/assets/personal-site-assets/nodejs-logo.png"/></a>
+      <span aria-haspopup="true" data-tooltip class="has-tip" title="HTML"><img class="skill-logo-img logo-img" src="{{ site.url }}/assets/personal-site-assets/html-logo.png"/></span>
+      <span aria-haspopup="true" data-tooltip class="has-tip" title="CSS"><img class="skill-logo-img logo-img" src="{{ site.url }}/assets/personal-site-assets/css-logo.png"/></span>
+      <a href="http://getbootstrap.com"><span aria-haspopup="true" data-tooltip class="has-tip" title="Bootstrap"><img class="skill-logo-img logo-img" src="{{ site.url }}/assets/personal-site-assets/bootstrap-logo.png"/></span></a>
+      <a href="http://jquery.com"><span aria-haspopup="true" data-tooltip class="has-tip" title="jQuery"><img class="skill-logo-img logo-img" src="{{ site.url }}/assets/personal-site-assets/jquery-logo.png"/></span></a>
+      <a href="https://git-scm.com"><span aria-haspopup="true" data-tooltip class="has-tip" title="Git"><img class="skill-logo-img logo-img" src="{{ site.url }}/assets/personal-site-assets/git-logo.png"/></span></a>
+    </div>
+    <div class="row skill-logo-row">
+      <p>
+      &bull; Great with Computers and Technology – Have worked with python, NodeJS, Java, JavaScript, Relational Databases and open to tackling anything new!
+      </p>
+      <p>
+      &bull; Proficient mechanical and robotics skills, soldering skills, have experience designing PCB’s, extensive experience with Raspberry Pi and Arduino platforms.
+      </p>
+      <p>
+      &bull; Enthusiastic and able to converse with customers easily and confidently.
+      </p>
+      <p>
+      &bull; Experience working with social media management and automation.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="blog-link">
+  <a href="/resume"><i class="fa fa-angle-left"></i>&nbsp;View Resume&nbsp;<i class="fa fa-angle-right"></i></a>
+</section>
+
+<section class="employer-logos">
+  <div class="home-page-section-content">
+    <h1>Worked With&nbsp;&nbsp;&nbsp;<small></h1>
+    <hr>
+    <div class="row employer-logo-row">
+      <a href="http://csgoreactor.com"><img class="employer-logo-img csgoreactor-img" src="{{ site.url }}/assets/personal-site-assets/csgoreactor.png"/></a>
+      <a href="https://www.instagram.com/thatclickyfeeling/"><img class="employer-logo-img thatclickyfeeling-img" src="{{ site.url }}/assets/personal-site-assets/thatclickyfeeling.png"/></a>
+    </div>
+  </div>
+</section>
+
+<section class="featured-projects">
+  <div class="featured-projects-content home-page-section-content">
+    <h1 class="featured-projects-title">Featured Projects&nbsp;&nbsp;&nbsp;<small><a href="/projects">See all&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a></small></h1>
+    <hr>
+    {% for project in site.data.projects %}
+      {% if project.featured == true %}
+        <div class="row">
+          <div class="xlarge-12 columns">
+            <div class="featured-project-box">
+              <h2 class="project-name">{{ project.name }}&nbsp;
+                <br class="hide-for-medium-up" />
+                <small>
+                  Type:&nbsp;{{ project.type }}
+                  {% if project.repository %}| <a href="{{ project.repository }}">Repo</a>{% endif %}
+                  {% if project.weblink %}| <a href="{{ project.weblink }}">Link</a>{% endif %}
+                </small>
+              </h2>
+              <p class="project-description">{{ project.description }}</p>
+            </div>
+            <br/>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

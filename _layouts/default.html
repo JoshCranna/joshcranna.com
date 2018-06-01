@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+    <div class="masthead">
+      <nav class="link-to-home">
+        <a href="/"><i class="fa fa-angle-left"></i>&nbsp;&nbsp;&nbsp;<strong>Josh</strong>Cranna</a>
+      </nav>
+      <nav class="masthead-links">
+      {% for page in site.blog_masthead_pages %}
+        &nbsp;
+        <small><a href="{{ page[1] }}">{{ page[0] }}</a></small>
+        &nbsp;
+      {% endfor %}
+      </nav>
+    </div>
+    <div class="container content">
+
+      {{ content }}
+
+    <div class="footer">
+      <p>
+        &copy; {{ site.time | date: '%Y' }} Josh Cranna. All rights reserved.
+      </p>
+    </div>
+  </div>
+
+  </body>
+</html>
