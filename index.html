@@ -73,30 +73,3 @@ title: Home
     </div>
   </div>
 </section>
-
-<section class="featured-projects">
-  <div class="featured-projects-content home-page-section-content">
-    <h1 class="featured-projects-title">Featured Projects&nbsp;&nbsp;&nbsp;<small><a href="/projects">See all&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a></small></h1>
-    <hr>
-    {% for project in site.data.projects %}
-      {% if project.featured == true %}
-        <div class="row">
-          <div class="xlarge-12 columns">
-            <div class="featured-project-box">
-              <h2 class="project-name">{{ project.name }}&nbsp;
-                <br class="hide-for-medium-up" />
-                <small>
-                  Type:&nbsp;{{ project.type }}
-                  {% if project.repository %}| <a href="{{ project.repository }}">Repo</a>{% endif %}
-                  {% if project.weblink %}| <a href="{{ project.weblink }}">Link</a>{% endif %}
-                </small>
-              </h2>
-              <p class="project-description">{{ project.description }}</p>
-            </div>
-            <br/>
-          </div>
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
-</section>
