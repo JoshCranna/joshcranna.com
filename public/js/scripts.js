@@ -1,6 +1,6 @@
-var greetingLine1 = "Current software developer and marketer with a voracious curiosity and a desire to learn everything.";
+var greetingLine1 = "Current cybersecurity student and salesman with a voracious curiosity and a desire to learn everything.";
 var greetingLine2 = "PAC Graduate and a keen learner, I am ambitious and strive to acheive.";
-var greetingLine3 = "I believe in not just <em>writing code</em>, but designing <em>great experiences</em>.";
+var greetingLine3 = "I believe in not just <em>writing code</em>, but creating <em>great experiences</em>.";
 
 $(document).ready(function() {
     $(document).foundation();
